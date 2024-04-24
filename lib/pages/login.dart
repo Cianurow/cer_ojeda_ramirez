@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 import 'package:cer_ojeda_ramirez/pages/form.dart';
 import 'package:flutter/material.dart';
 import 'package:cer_ojeda_ramirez/widgets/userProfile.dart';
@@ -41,4 +39,3 @@ class LoginPage extends StatelessWidget {
         ));
   }
 }
->>>>>>> Stashed changes
