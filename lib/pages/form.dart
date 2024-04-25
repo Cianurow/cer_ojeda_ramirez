@@ -19,14 +19,22 @@ class LoginForm extends StatelessWidget {
                   value: user.name,
                 );
               }).toList(),
-              decoration: InputDecoration(labelText: 'Usuario'),
+              decoration: InputDecoration(
+                labelText: 'Usuario',
+                labelStyle: TextStyle(color: Color(0xFF4A7DDF)),
+                focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Color(0xFF4A7DDF)),
+                ),
+              ),
               onChanged: (value) {
                 _selectedUser = value;
                 print(value);
               }),
           TextFormField(
             obscureText: true,
-            decoration: InputDecoration(labelText: 'contraseña'),
+            decoration: InputDecoration(
+                labelText: 'contraseña',
+                labelStyle: TextStyle(color: Color(0xFF4A7DDF))),
           ),
           SizedBox(height: 15),
           ElevatedButton(
@@ -42,7 +50,14 @@ class LoginForm extends StatelessWidget {
                   );
                 }
               },
-              child: Text('Iniciar sesión'))
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color.fromARGB(202, 255, 255, 255),
+              ),
+              child: Text('Iniciar sesión',
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                      color: Color(0xFF4A7DDF))))
         ],
       ),
     );

@@ -10,12 +10,12 @@ class Profile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Buscar el usuario correspondiente al nombre proporcionado
     User? userProfile = UserList.users.firstWhere(
       (user) => user.name == this.user,
     );
 
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 27, 27, 27),
       appBar: AppBar(
         title: Text('${this.user}'),
       ),
@@ -28,9 +28,59 @@ class Profile extends StatelessWidget {
               width: 300,
               height: 300,
             ),
-            Text('Ciudad: ${userProfile.city}'),
-            Text('Edad: ${userProfile.age}'),
-            Text('Asesinatos: ${userProfile.kill}'),
+            Text(
+              'Informacíon de cuenta:',
+              style: TextStyle(fontSize: 16, color: Colors.white),
+            ),
+            Container(
+              width: 100,
+              child: Divider(
+                color: Colors.white,
+                thickness: 2,
+              ),
+            ),
+            Text(
+              'Pais: ${userProfile.city}',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.white,
+              ),
+            ),
+            Container(
+              width: 100,
+              child: Divider(
+                color: Colors.white,
+                thickness: 2,
+              ),
+            ),
+            Text(
+              'Edad: ${userProfile.age}',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.white,
+              ),
+            ),
+            Container(
+              width: 100,
+              child: Divider(
+                color: Colors.white,
+                thickness: 2,
+              ),
+            ),
+            Text(
+              'Asesinatos: ${userProfile.kill}',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.white,
+              ),
+            ),
+            Container(
+              width: 100,
+              child: Divider(
+                color: Colors.white,
+                thickness: 2,
+              ),
+            ),
             SizedBox(
               height: 15,
             ),
@@ -38,7 +88,14 @@ class Profile extends StatelessWidget {
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: Text('Volver'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color.fromARGB(202, 255, 255, 255),
+              ),
+              child: Text('Volver',
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                      color: Color(0xFF4A7DDF))),
             ),
           ],
         ),

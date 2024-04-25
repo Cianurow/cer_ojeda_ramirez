@@ -1,4 +1,5 @@
 import 'package:cer_ojeda_ramirez/pages/Profile.dart';
+import 'package:cer_ojeda_ramirez/pages/home.dart';
 import 'package:cer_ojeda_ramirez/pages/login.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +23,10 @@ class ProfileAppBar extends StatelessWidget {
             itemBuilder: (context) => [
               PopupMenuItem(
                 child: ListTile(
-                  leading: Icon(Icons.person),
+                  leading: Icon(
+                    Icons.person,
+                    color: Color(0xFF4A7DDF),
+                  ),
                   title: Text('Perfil'),
                   onTap: () {
                     Navigator.push(
@@ -38,7 +42,10 @@ class ProfileAppBar extends StatelessWidget {
               ),
               PopupMenuItem(
                 child: ListTile(
-                  leading: Icon(Icons.logout),
+                  leading: Icon(
+                    Icons.logout,
+                    color: Color.fromARGB(255, 222, 68, 68),
+                  ),
                   title: Text('Cerrar sesión'),
                   onTap: () {
                     Navigator.pushAndRemoveUntil(
@@ -57,8 +64,9 @@ class ProfileAppBar extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        children: [],
+      body: Padding(
+        padding: EdgeInsets.all(0),
+        child: Home(),
       ),
     );
   }

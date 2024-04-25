@@ -14,8 +14,8 @@ class User {
 
 class UserList {
   static List<User> users = [
-    User(name: 'Shinobi', city: 'Indonesians', age: '47', kill: '33'),
-    User(name: 'Adjudicator', city: 'American', age: '52', kill: '41'),
-    User(name: 'Harbinger', city: 'American', age: '58', kill: '67'),
+    User(name: 'Shinobi', city: 'Indonesia', age: '47', kill: '33'),
+    User(name: 'Adjudicator', city: 'Estados Unidos', age: '52', kill: '41'),
+    User(name: 'Harbinger', city: 'Estados Unidos', age: '58', kill: '67'),
   ];
 }
