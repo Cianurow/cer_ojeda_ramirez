@@ -10,7 +10,6 @@ class Profile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Buscar el usuario correspondiente al nombre proporcionado
     User? userProfile = UserList.users.firstWhere(
       (user) => user.name == this.user,
     );

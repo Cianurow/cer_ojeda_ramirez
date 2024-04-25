@@ -70,7 +70,6 @@ class _TabHotelState extends State<TabHotel> {
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Cuadro de imagen cuadrada al lado izquierdo
                     Container(
                       width: 80,
                       height: 80,
@@ -83,7 +82,6 @@ class _TabHotelState extends State<TabHotel> {
                       ),
                     ),
                     SizedBox(width: 10),
-                    // Column para el contenido de texto
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,

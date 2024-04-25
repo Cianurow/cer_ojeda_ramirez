@@ -80,8 +80,7 @@ class TabService extends StatelessWidget {
               ),
             ),
             child: Card(
-              color:
-                  Color.fromARGB(202, 255, 255, 255), // Color de fondo del card
+              color: Color.fromARGB(202, 255, 255, 255),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -91,14 +90,14 @@ class TabService extends StatelessWidget {
                   Icon(
                     service.icon,
                     size: 40,
-                    color: Color(0xFF4A7DDF), // Color de los iconos
+                    color: Color(0xFF4A7DDF),
                   ),
                   SizedBox(height: 10),
                   Text(
                     service.name,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFF7B10A1), // Color del texto
+                      color: Color(0xFF7B10A1),
                     ),
                   ),
                 ],
@@ -123,18 +122,12 @@ class ServiceDetailScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Color(0xFF1F0A32),
         title: Text('Servicio de ${service.name}'),
-        //  iconTheme: IconThemeData(color: Color(0xFF7B10A1)),
       ),
       body: Center(
         child: Column(
-          crossAxisAlignment:
-              CrossAxisAlignment.center, // Centraliza el contenido
-          //mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Padding(padding: EdgeInsets.all(10)),
-
-            // Utiliza la ruta de la imagen almacenada en service.imagePath
-
             ClipOval(
               child: Container(
                 width: 200,
@@ -146,7 +139,6 @@ class ServiceDetailScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-
             Text(
               'Información:',
               style: TextStyle(
@@ -154,17 +146,15 @@ class ServiceDetailScreen extends StatelessWidget {
                 fontSize: 24,
                 color: Color(0xFF7B10A1),
               ),
-              textAlign: TextAlign.center, // Centra el texto
+              textAlign: TextAlign.center,
             ),
             Container(
-              width: 300, // Ancho específico para el Divider
+              width: 300,
               child: Divider(
-                // Envolver el Divider dentro de un contenedor con ancho específico
                 color: Colors.white,
                 thickness: 2,
               ),
             ),
-            // Detalles del servicio justificados y ordenados
             Text(
               'Encargado: ${service.personCharge}',
               style: TextStyle(
@@ -174,9 +164,8 @@ class ServiceDetailScreen extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             Container(
-              width: 300, // Ancho específico para el Divider
+              width: 300,
               child: Divider(
-                // Envolver el Divider dentro de un contenedor con ancho específico
                 color: Colors.white,
                 thickness: 2,
               ),
@@ -189,13 +178,12 @@ class ServiceDetailScreen extends StatelessWidget {
                   fontSize: 16,
                   color: Colors.white,
                 ),
-                textAlign: TextAlign.center, // Justifica el texto
+                textAlign: TextAlign.center,
               ),
             ),
             Container(
-              width: 300, // Ancho específico para el Divider
+              width: 300,
               child: Divider(
-                // Envolver el Divider dentro de un contenedor con ancho específico
                 color: Colors.white,
                 thickness: 2,
               ),
@@ -206,12 +194,11 @@ class ServiceDetailScreen extends StatelessWidget {
                 fontSize: 16,
                 color: Colors.white,
               ),
-              textAlign: TextAlign.center, // Justifica el texto
+              textAlign: TextAlign.center,
             ),
             Container(
-              width: 300, // Ancho específico para el Divider
+              width: 300,
               child: Divider(
-                // Envolver el Divider dentro de un contenedor con ancho específico
                 color: Colors.white,
                 thickness: 2,
               ),
@@ -222,12 +209,11 @@ class ServiceDetailScreen extends StatelessWidget {
                 fontSize: 16,
                 color: Colors.white,
               ),
-              textAlign: TextAlign.center, // Justifica el texto
+              textAlign: TextAlign.center,
             ),
             Container(
-              width: 300, // Ancho específico para el Divider
+              width: 300,
               child: Divider(
-                // Envolver el Divider dentro de un contenedor con ancho específico
                 color: Colors.white,
                 thickness: 2,
               ),
